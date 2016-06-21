@@ -18,26 +18,27 @@ window.console.log("The rounded value of this number is : " + Math.round(x));
 
 var x = window.prompt("Please provide a floating point number (a decimal)");
 window.console.log("The rounded down value to the nearest integer of this number is : " + Math.floor(x));
-*/
 
-// STEP 4 - 
+
+// STEP 4 - ask the user to enter 5 number and report the max and min
 
 var commaDelimitedNumbers = window.prompt("Please enter 5  comma delimited numbers");
 window.console.log(commaDelimitedNumbers);
 
 var arr = new String(commaDelimitedNumbers);
 arr = arr.split(",");
-var x=3, y=2;
-window.console.log("arr = " + arr); //Math.min(arr[0],arr[2],arr[4],arr[6],arr[8],arr[10]));
+var max = Math.max.apply(Math, arr);
+var min = Math.min.apply(Math, arr);
 
-/*
-// STEP 5 - 
+window.console.log("max = " + max + " and min = " + min); 
+
+
+// STEP 5 - find the square root of a number
 
 var x = window.prompt("Please provide a number");
 window.console.log("The square root of this number is : " + Math.sqrt(x));
-*/
 
-/*
+
 ////////////////////////////////////////////
 // Part 2 - Date and Date Functions
 
@@ -351,7 +352,7 @@ for (var i=0; i < 8; i++) {
     strOfHashes = " ";
 }
 
-
+*/
 ///////////////////////////////////////////
 // Part 9 - Odd or Even? 
 
@@ -363,4 +364,3 @@ for (var i=0; i <= 15; i++) {
         window.console.log(i + " is odd");
     }
 }
-*/
